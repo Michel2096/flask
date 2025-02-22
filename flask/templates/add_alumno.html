@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-white">Agregar Alumno</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" name="apellido" required>
+        </div>
+        <div class="mb-3">
+            <label for="grupo_id" class="form-label">Grupo</label>
+            <select class="form-select" id="grupo_id" name="grupo_id" required>
+                {% for grupo in grupos %}
+                    <option value="{{ grupo.id }}">{{ grupo.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="carrera_id" class="form-label">Carrera</label>
+            <select class="form-select" id="carrera_id" name="carrera_id" required>
+                {% for carrera in carreras %}
+                    <option value="{{ carrera.id }}">{{ carrera.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="universidad_id" class="form-label">Universidad</label>
+            <select class="form-select" id="universidad_id" name="universidad_id" required>
+                {% for universidad in universidades %}
+                    <option value="{{ universidad.id }}">{{ universidad.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="profesor_id" class="form-label">Profesor</label>
+            <select class="form-select" id="profesor_id" name="profesor_id" required>
+                {% for profesor in profesores %}
+                    <option value="{{ profesor.id }}">{{ profesor.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+{% endblock %}

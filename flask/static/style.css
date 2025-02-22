@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #111; /* Fondo oscuro */
+    padding: 20px;
+    border-bottom: 1px solid #444; /* Línea blanca */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff; /* Texto blanco */
+}
+
+/* Footer */
+footer {
+    background-color: #111; /* Fondo oscuro */
+    padding: 10px;
+    border-top: 1px solid #444; /* Línea blanca */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #fff; /* Texto blanco */
+}
+
+/* Tablas */
+.table {
+    background-color: #222; /* Fondo oscuro para la tabla */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #444; /* Línea blanca */
+}
+
+.table th,
+.table td {
+    border: 1px solid #444; /* Línea blanca */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #333; /* Fondo más oscuro para filas impares */
+}
+
+/* Botones */
+.btn {
+    margin: 5px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Formularios */
+.form-control {
+    background-color: #333; /* Fondo oscuro para inputs */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #444; /* Línea blanca */
+}
+
+.form-control:focus {
+    background-color: #444; /* Fondo más claro al enfocar */
+    color: #fff;
+    border-color: #666;
+}
+
+.form-label {
+    color: #fff; /* Texto blanco para etiquetas */
+}
+
+/* Alertas (Flash messages) */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alert-error {
+    background-color: #dc3545;
+    color: #fff;
+}
