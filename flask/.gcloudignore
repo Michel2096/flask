@@ -1,0 +1,8 @@
+# Ignorar el entorno virtual
+venv/
+
+# Ignorar la base de datos local
+database.db
+
+# Ignorar archivos de configuración local
+.env

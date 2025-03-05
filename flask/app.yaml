@@ -1,0 +1,12 @@
+runtime: python39  # Usa la versión de Python que necesites
+entrypoint: gunicorn -b :$PORT app:app  # Asegúrate de que "app:app" coincida con tu archivo y aplicación Flask
+
+env_variables:
+  FLASK_ENV: production  # Configura Flask para producción
+
+handlers:
+  - url: /static
+    static_dir: static
+
+  - url: /.*
+    script: auto
